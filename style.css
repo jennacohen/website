@@ -1,6 +1,18 @@
+/* 
+COLOR PALETTE
+pink/purple: #F1C4F2
+light blue: #79BAF2
+gold: #D9A74A
+off white: #F2E8DC
+redish orange: #F25835
+*/
+
+
 .header_name{
-    color: red;
+    color: #F25835;
     font-family: 'Archivo', sans-serif;
+    font-size: 3em ;
     font-weight: 600;
     text-align: center;
+    padding-top: 30px;
 }

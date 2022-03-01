@@ -7,6 +7,10 @@ off white: #F2E8DC
 redish orange: #F25835
 */
 
+/* page background */
+body{
+    background-color:#F2E8DC ;
+}
 
 .header_name{
     color: #F25835;

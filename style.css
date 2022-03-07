@@ -12,6 +12,8 @@ dark blue: #2A4382
 body{
     background-color:#F2E8DC ;
     font-family: 'Archivo', sans-serif;
+    max-width: 650px;
+    margin: auto;
 }
 
 .header_name{
@@ -34,6 +36,18 @@ body{
     font-weight: 200;
     text-align: center;
     font-size: 40px;
+    letter-spacing: 4px;
+
+}
+
+.bio{
+    max-width: 550px;
+    margin: auto;
+    color:#2A4382;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 16px;
     letter-spacing: 4px;
 
 }

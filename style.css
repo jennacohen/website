@@ -73,5 +73,6 @@ color: #F25835;
 }
 
 .portfolio_image{
-    width: 200px;
+    width: 50%;
+    margin: 0 auto;
 }

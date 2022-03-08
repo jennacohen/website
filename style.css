@@ -61,3 +61,17 @@ color: #79BAF2;
 a:hover{
 color: #F25835;
 }
+
+/* portfolio styles */
+.portfolio{
+    color:#2A4382;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.portfolio_image{
+    
+}

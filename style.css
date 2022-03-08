@@ -15,7 +15,7 @@ body{
     max-width: 650px;
     margin: auto;
 }
-
+/* header */
 .header_name{
     color: #F25835;
     font-family: 'Archivo', sans-serif;
@@ -41,13 +41,23 @@ body{
 }
 
 .bio{
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
     color:#2A4382;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
-    text-align: justify;
-    font-size: 16px;
+    text-align: left;
+    font-size: 15px;
     letter-spacing: 4px;
 
+}
+/* link styles */
+a:link {
+color: #D9A74A;
+}
+a:visited {
+color: #79BAF2;
+}
+a:hover{
+color: #F25835;
 }

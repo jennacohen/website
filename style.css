@@ -106,3 +106,12 @@ color: #F25835;
     font-size: 15px;
     letter-spacing: 1px; 
 }
+
+.footer{
+  padding: 25px;
+  background-color: #2A4382;
+  color: #F2E8DC;
+  text-align: center;
+  max-width: 1920px;
+
+}

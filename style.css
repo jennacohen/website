@@ -73,6 +73,25 @@ color: #F25835;
 }
 
 .portfolio_image{
-    width: 50%;
+    width: 100px;
     margin: 0 auto;
+}
+
+.portfolio_entry_title{
+    color: #F25835;
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center; 
+}
+
+.portfolio_entry{
+    max-width: 500px;
+    margin: 0 auto;
+    color:#2A4382;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 1px; 
 }

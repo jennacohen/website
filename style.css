@@ -78,6 +78,16 @@ color: #F25835;
     text-align: center;
 }
 
+/* .fadein img{
+    opacity:0.5;
+    transition: 1s ease;
+    }
+    
+.fadein img:hover{
+    opacity:1;
+    transition: 1s ease;
+    } */
+
 .portfolio_entry_title{
     color: #F25835;
     font-family: 'Archivo', sans-serif;

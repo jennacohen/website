@@ -12,11 +12,11 @@ dark blue: #2A4382
 body{
     background-color:#F2E8DC ;
     font-family: 'Archivo', sans-serif;
-    max-width: 650px;
-    margin: auto;
 }
 /* header */
 .header_name{
+    max-width: 650px;
+    margin: 0 auto;
     color: #F25835;
     font-family: 'Archivo', sans-serif;
     font-size: 90px;
@@ -26,11 +26,14 @@ body{
 }
 
 .last_name{
+    max-width: 650px;
     background-color: #2A4382;
     font-weight: 400;
 }
 
 .title{
+    max-width: 650px;
+    margin: 0 auto;
     color:#2A4382;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
@@ -70,12 +73,21 @@ color: #F25835;
     text-align: center;
     font-size: 30px;
     letter-spacing: 4px;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .portfolio_image{
-    width: 75%;
+    max-width: 500px;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
+    display: block;
+}
+
+.work_entry img:hover {
+    box-shadow: 0.1em 0.1em 1em 0.03em #000000;
+    transform:scale(1.05);
 }
 /* https://thebrandsmen.com/css-image-hover-effects/ */
 /* .fadein img{

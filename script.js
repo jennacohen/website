@@ -4,18 +4,18 @@
 // https://www.typeitjs.com/docs/vanilla/usage#custom-properties
 
 new TypeIt("#myElement")
-    .deleteSpeed: 100
-        .type("i'm a digital designer")
-        .pause(1800)
-        .delete(16)
-        .pause(1800)
-        .type("ux enthusiast")
-        .pause(1800)
-        .delete(13)
-        .pause(1800)
-        .type("storyteller.")
+    // [deleteSpeed] 100;
+    .type("i'm a digital designer")
+    .pause(1800)
+    .delete(16)
+    .pause(1800)
+    .type("ux enthusiast")
+    .pause(1800)
+    .delete(13)
+    .pause(1800)
+    .type("storyteller.")
 
-        .go();
+    .go();
 
 
 

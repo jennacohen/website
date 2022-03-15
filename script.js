@@ -3,8 +3,10 @@
 // slow deletion speed 
 // https://www.typeitjs.com/docs/vanilla/usage#custom-properties
 
-new TypeIt("#myElement")
-    // [deleteSpeed] 100;
+new TypeIt("#myElement", {
+    deleteSpeed: 150,
+})
+
     .type("i'm a digital designer")
     .pause(1800)
     .delete(16)

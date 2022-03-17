@@ -27,21 +27,21 @@ body{
     color: #F20C36;
     font-family: 'Archivo', sans-serif;
     font-size: 90px;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     padding-top: 30px;
 }
 
 .last_name{
     max-width: 650px;
-    color: #049DD9;
-    font-weight: 400;
+    color: #FFF5ED;
+    font-weight: 200;
 }
 
 .title{
     max-width: 650px;
     margin: 0 auto;
-    color:#F2B705;
+    color:#F20C36;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
     text-align: center;
@@ -73,7 +73,7 @@ i{
     padding-left: 8px;
     padding-right: 8px;
     /* transition: all 0.5s ; */
-    color: #FFF5ED;
+    color: #F20C36;
 } 
 
 i:hover{

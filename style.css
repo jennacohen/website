@@ -1,23 +1,29 @@
 /* 
-COLOR PALETTE
+OLD COLOR PALETTE
 pink/purple: #F1C4F2
 light blue: #79BAF2
 gold: #D9A74A
 off white: #F2E8DC
 redish orange: #F25835
 dark blue: #2A4382
+
+NEW LM/DM COLOR PALETTE
+dark plum: #400A37
+soft purple: #BE60BF
+bright purple: #E263F2
+off white: #EBEEF2
 */
 
 /* page background */
 body{
-    background-color:#F2E8DC ;
+    background-color:#2b0725 ;
     font-family: 'Archivo', sans-serif;
 }
 /* header */
 .header_name{
     max-width: 650px;
     margin: 0 auto;
-    color: #F25835;
+    color: #E263F2;
     font-family: 'Archivo', sans-serif;
     font-size: 90px;
     font-weight: 400;
@@ -25,16 +31,16 @@ body{
     padding-top: 30px;
 }
 
-.last_name{
+/* .last_name{
     max-width: 650px;
     background-color: #2A4382;
     font-weight: 400;
-}
+} */
 
 .title{
     max-width: 650px;
     margin: 0 auto;
-    color:#2A4382;
+    color:#EBEEF2;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
     text-align: center;
@@ -46,7 +52,7 @@ body{
 .bio{
     max-width: 500px;
     margin: auto;
-    color:#2A4382;
+    color:#EBEEF2;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -56,16 +62,22 @@ body{
 }
 
 /* nav icons */
-i{
-    padding-right: 6px;
-    padding-left: 6px;
-    transition: all 0.5s ;
-    color: #000000;
+.icons{
+    margin: 0 auto !important;
+    display: block !important;
+    text-align: center !important;
 }
 
+i{
+    padding-left: 8px;
+    padding-right: 8px;
+    /* transition: all 0.5s ; */
+    color: #EBEEF2;
+} 
+
 i:hover{
-    transform:scale(1.25);
-    color: #edcf2e;
+    transform:scale(1.10);
+    color: #E263F2; 
 }
 
 
@@ -82,7 +94,7 @@ color: #F25835;
 
 /* portfolio styles */
 .portfolio{
-    color:#2A4382;
+    color:#E263F2;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
     text-align: center;
@@ -101,7 +113,7 @@ color: #F25835;
 }
 
 .work_entry img:hover {
-    box-shadow: 0.1em 0.1em 1em 0.03em #000000;
+    box-shadow: 0.1em 0.1em 1em 0.03em #EBEEF2;
     transform:scale(1.05);
 }
 /* https://thebrandsmen.com/css-image-hover-effects/ */
@@ -116,7 +128,7 @@ color: #F25835;
     } */
 
 .portfolio_entry_title{
-    color: #F25835;
+    color: #E263F2;
     font-family: 'Archivo', sans-serif;
     font-size: 25px;
     font-weight: 400;
@@ -126,7 +138,7 @@ color: #F25835;
 .portfolio_entry{
     max-width: 500px;
     margin: 0 auto;
-    color:#2A4382;
+    color:#EBEEF2;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -136,8 +148,8 @@ color: #F25835;
 
 .footer{
   padding: 25px;
-  background-color: #2A4382;
-  color: #F2E8DC;
+  background-color: #E263F2;
+  color: #EBEEF2;
   text-align: center;
   max-width: 1920px;
 

@@ -7,6 +7,7 @@ new TypeIt("#myElement", {
     deleteSpeed: 70,
 })
 
+    .pause(500)
     .type("i'm a digital designer")
     .pause(1400)
     .delete(16)

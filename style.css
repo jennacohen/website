@@ -54,6 +54,21 @@ body{
     letter-spacing: 2px;
 
 }
+
+/* nav icons */
+i{
+    padding-right: 6px;
+    padding-left: 6px;
+    transition: all 0.5s ;
+    color: #000000;
+}
+
+i:hover{
+    transform:scale(1.25);
+    color: #edcf2e;
+}
+
+
 /* link styles */
 a:link {
 color: #D9A74A;

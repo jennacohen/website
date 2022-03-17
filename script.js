@@ -29,3 +29,23 @@ new TypeIt("#myElement", {
 //     return instance;
 //     // strings: "journalist + designer",
 // }).go();
+
+
+$(document).ready(function () {
+    var elem = $("body");
+    var color = elem.css('background-color')
+    var counter = 0
+    $("#btn").click(function () {
+        counter = counter + 1
+        if (counter % 2 == 0) {
+            $("body").css({ "backgroundColor": "#1A1B1B" });
+            $(".toggle-color").css({ "color": "#FFF5ED" });
+        } else {
+            $("body").css({ "backgroundColor": "#FFF5ED" });
+            $(".toggle-color").css({ "color": "#1A1B1B" });
+        }
+        // console.log(color)
+
+        // $("body").css({ "maxWidth": "white" });
+    });
+});

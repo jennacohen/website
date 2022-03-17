@@ -8,22 +8,23 @@ redish orange: #F25835
 dark blue: #2A4382
 
 NEW LM/DM COLOR PALETTE
-dark plum: #400A37
-soft purple: #BE60BF
-bright purple: #E263F2
-off white: #EBEEF2
+off black: #1A1B1B
+pink: #F20C36
+yellow: #F2B705
+blue: #049DD9
+off white: #FFF5ED
 */
 
 /* page background */
 body{
-    background-color:#2b0725 ;
+    background-color:#1A1B1B ;
     font-family: 'Archivo', sans-serif;
 }
 /* header */
 .header_name{
     max-width: 650px;
     margin: 0 auto;
-    color: #E263F2;
+    color: #F20C36;
     font-family: 'Archivo', sans-serif;
     font-size: 90px;
     font-weight: 400;
@@ -31,16 +32,16 @@ body{
     padding-top: 30px;
 }
 
-/* .last_name{
+.last_name{
     max-width: 650px;
-    background-color: #2A4382;
+    color: #049DD9;
     font-weight: 400;
-} */
+}
 
 .title{
     max-width: 650px;
     margin: 0 auto;
-    color:#EBEEF2;
+    color:#F2B705;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
     text-align: center;
@@ -52,7 +53,7 @@ body{
 .bio{
     max-width: 500px;
     margin: auto;
-    color:#EBEEF2;
+    color:#FFF5ED;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -72,18 +73,19 @@ i{
     padding-left: 8px;
     padding-right: 8px;
     /* transition: all 0.5s ; */
-    color: #EBEEF2;
+    color: #FFF5ED;
 } 
 
 i:hover{
     transform:scale(1.10);
-    color: #E263F2; 
+    color: #F20C36; 
 }
 
 
 /* link styles */
 a:link {
-color: #D9A74A;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
 }
 a:visited {
 color: #79BAF2;
@@ -94,7 +96,7 @@ color: #F25835;
 
 /* portfolio styles */
 .portfolio{
-    color:#E263F2;
+    color:#F20C36;
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
     text-align: center;
@@ -113,7 +115,7 @@ color: #F25835;
 }
 
 .work_entry img:hover {
-    box-shadow: 0.1em 0.1em 1em 0.03em #EBEEF2;
+    box-shadow: 0.1em 0.1em 1em 0.03em #FFF5ED;
     transform:scale(1.05);
 }
 /* https://thebrandsmen.com/css-image-hover-effects/ */
@@ -128,7 +130,7 @@ color: #F25835;
     } */
 
 .portfolio_entry_title{
-    color: #E263F2;
+    color: #F20C36;
     font-family: 'Archivo', sans-serif;
     font-size: 25px;
     font-weight: 400;
@@ -138,7 +140,7 @@ color: #F25835;
 .portfolio_entry{
     max-width: 500px;
     margin: 0 auto;
-    color:#EBEEF2;
+    color:#FFF5ED;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -148,8 +150,8 @@ color: #F25835;
 
 .footer{
   padding: 25px;
-  background-color: #E263F2;
-  color: #EBEEF2;
+  background-color: #F20C36;
+  color: #FFF5ED;
   text-align: center;
   max-width: 1920px;
 

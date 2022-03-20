@@ -57,7 +57,7 @@ body{
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 2px;
 
 }
@@ -92,6 +92,15 @@ color: #79BAF2;
 }
 a:hover{
 color: #F25835;
+}
+
+.mode-button{
+text-decoration: underline;
+text-decoration-thickness: 4px;
+}
+
+.mode-button:hover{
+    transform:scale(1.10);
 }
 
 /* portfolio styles */

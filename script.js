@@ -38,11 +38,17 @@ $(document).ready(function () {
     $("#btn").click(function () {
         counter = counter + 1
         if (counter % 2 == 0) {
-            $("body").css({ "backgroundColor": "#1A1B1B" });
-            $(".toggle-color").css({ "color": "#FFF5ED" });
+            $("body").css({ "backgroundColor": "#120902" });
+            $(".toggle-color").css({ "color": "#FFFFF0" });
+            $(".image-border-color").css({ "border-color": "#FFFFF0" });
+            $(".footer-color").css({ "background-color": "#FFFFF0" });
+            $(".footer-text-color").css({ "color": "#120902" });
         } else {
-            $("body").css({ "backgroundColor": "#FFF5ED" });
-            $(".toggle-color").css({ "color": "#1A1B1B" });
+            $("body").css({ "backgroundColor": "#FFFFF0" });
+            $(".toggle-color").css({ "color": "#120902" });
+            $(".image-border-color").css({ "border-color": "#120902" });
+            $(".footer-color").css({ "background-color": "#120902" });
+            $(".footer-text-color").css({ "color": "#FFFFF0" });
         }
         // console.log(color)
 

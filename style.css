@@ -47,8 +47,14 @@ body{
     text-align: center;
     font-size: 35px;
     /* letter-spacing: 4px; */
-
 }
+
+@media only screen and (max-width: 767px) {
+    .title{ 
+    max-width: 500px;
+    font-size: 28px;
+    }
+    }
 
 .bio{
     max-width: 500px;
@@ -59,8 +65,17 @@ body{
     text-align: justify;
     font-size: 18px;
     /* letter-spacing: 2px; */
-
 }
+
+@media only screen and (max-width: 767px) {
+    .bio{ 
+    max-width: 400px;
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+    padding: 3px;
+    }
+    }
 
 /* nav icons */
 .icons{
@@ -175,6 +190,16 @@ color: #F25835;
     font-size: 18px;
     /* letter-spacing: 1px;  */
 }
+
+@media only screen and (max-width: 767px) {
+    .portfolio_entry{ 
+    max-width: 400px;
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+    padding: 3px;
+    }
+    }
 
 .footer{
   padding: 25px;

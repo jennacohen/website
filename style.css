@@ -21,27 +21,28 @@ GOLD: #F2C744
 */
 
 /* page background */
-body{
-    background-color:#120902;
+body {
+    background-color: #120902;
     font-family: 'Overpass Mono', monospace;
 }
+
 /* header */
-.header_name{
+.header_name {
     max-width: 650px;
     margin: 0 auto;
     color: #F2C744;
     font-family: 'Overpass Mono', monospace;
     font-size: 60px;
-    font-weight: 300; 
+    font-weight: 500;
     text-align: center;
     padding-top: 30px;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
 }
 
-.title{
+.title {
     max-width: 650px;
     margin: 0 auto;
-    color:#FFFFF0;
+    color: #FFFFF0;
     font-family: 'Overpass Mono', monospace;
     font-weight: 200;
     text-align: center;
@@ -50,67 +51,68 @@ body{
 }
 
 @media only screen and (max-width: 767px) {
-    .title{ 
-    max-width: 500px;
-    font-size: 28px;
+    .title {
+        max-width: 500px;
+        font-size: 28px;
     }
-    }
+}
 
-.bio{
+.bio {
     max-width: 500px;
     margin: auto;
-    color:#FFFFF0;
-    font-family: 'Overpass Mono', monospace;
-    font-weight: 300;
-    text-align: justify;
+    color: #FFFFF0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: left;
     font-size: 18px;
     /* letter-spacing: 2px; */
 }
 
 @media only screen and (max-width: 767px) {
-    .bio{ 
-    max-width: 400px;
-    text-align: left;
-    font-size: 16px;
-    margin: auto;
-    padding: 5px;
+    .bio {
+        max-width: 400px;
+        text-align: left;
+        font-size: 16px;
+        margin: auto;
+        padding: 5px;
     }
-    }
+}
 
 /* nav icons */
-.icons{
+.icons {
     margin: 0 auto !important;
     display: block !important;
     text-align: center !important;
-   
+
 }
 
-i{
+i {
     padding-left: 8px;
     padding-right: 8px;
     /* transition: all 0.5s ; */
     color: #F2C744;
-    
-} 
 
-i:hover{
-    transform:scale(1.10);
-    color: #F2C744; 
-    
+}
+
+i:hover {
+    transform: scale(1.10);
+    color: #F2C744;
+
 }
 
 
 /* link styles */
-a{
-text-decoration: underline;
-text-decoration-thickness: 2px;
-text-decoration-color: #F2C744;
-color: inherit !important;
-/* box-shadow: inset 0px -4px #f4d03f; */
-transition: 0.5s all;
-transform:scale(1.10);
-cursor: pointer;
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #F2C744;
+    color: inherit !important;
+    /* box-shadow: inset 0px -4px #f4d03f; */
+    transition: 0.5s all;
+    transform: scale(1.10);
+    cursor: pointer;
 }
+
 /* a:visited {
 color: #79BAF2;
 }
@@ -118,25 +120,25 @@ a:hover{
 color: #F25835;
 } */
 
-.mode-button{
+.mode-button {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: #F2C744;
     color: inherit !important;
     /* box-shadow: inset 0px -4px #f4d03f; */
     transition: 0.5s all;
-    transform:scale(1.10);
+    transform: scale(1.10);
     cursor: pointer;
 }
 
-.mode-button:hover{
-    transform:scale(1.10);
+.mode-button:hover {
+    transform: scale(1.10);
     text-decoration-color: #FFFFF0;
 }
 
 /* portfolio styles */
-.portfolio{
-    color:#F2C744;
+.portfolio {
+    color: #F2C744;
     font-family: 'Overpass Mono', monospace;
     font-weight: 400;
     text-align: center;
@@ -146,20 +148,21 @@ color: #F25835;
     margin: 0 auto;
 }
 
-.portfolio_image{
+.portfolio_image {
     max-width: 500px;
     width: 70%;
     margin: 0 auto;
     text-align: center;
     display: block;
     border: 5px solid;
-    border-color: #FFFFF0;  
+    border-color: #FFFFF0;
 }
 
 .work_entry img:hover {
     box-shadow: 0.1em 0.1em 1em 0.03em #FFFFF0;
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
+
 /* https://thebrandsmen.com/css-image-hover-effects/ */
 /* .fadein img{
     opacity:0.5;
@@ -171,41 +174,50 @@ color: #F25835;
     transition: 1s ease;
     } */
 
-.portfolio_entry_title{
+.portfolio_entry_title {
     color: #F2C744;
     font-family: 'Overpass Mono', monospace;
     font-size: 25px;
     font-weight: 400;
-    text-align: center; 
-    letter-spacing: 2px; 
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-.portfolio_entry{
+.portfolio_entry {
     max-width: 500px;
     margin: 0 auto;
-    color:#FFFFF0;
-    font-family: 'Overpass Mono', monospace;
+    color: #FFFFF0;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: left;
     font-size: 18px;
     /* letter-spacing: 1px;  */
 }
 
-@media only screen and (max-width: 767px) {
-    .portfolio_entry{ 
-    max-width: 400px;
-    text-align: left;
-    font-size: 16px;
-    margin: auto;
-    padding: 5px;
-    }
-    }
+.portfolio_entry_date {
+    color: #F2C744;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+}
 
-.footer{
-  padding: 25px;
-  background-color: #FFFFF0;
-  color: #120902 ;
-  text-align: center;
-  max-width: 1920px;
+@media only screen and (max-width: 767px) {
+    .portfolio_entry {
+        max-width: 400px;
+        text-align: left;
+        font-size: 16px;
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+.footer {
+    padding: 25px;
+    background-color: #FFFFF0;
+    color: #120902;
+    text-align: center;
+    max-width: 1920px;
 
 }

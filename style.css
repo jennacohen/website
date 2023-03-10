@@ -101,10 +101,9 @@ i:hover {
 /* link styles */
 a {
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
   text-decoration-color: #f2c744;
   color: inherit !important;
-  /* box-shadow: inset 0px -4px #f4d03f; */
   transition: 0.5s all;
   transform: scale(1.1);
   cursor: pointer;
@@ -115,7 +114,6 @@ a {
   text-decoration-thickness: 2px;
   text-decoration-color: #f2c744;
   color: inherit !important;
-  /* box-shadow: inset 0px -4px #f4d03f; */
   transition: 0.5s all;
   transform: scale(1.1);
   cursor: pointer;
@@ -162,6 +160,8 @@ a {
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
+  text-decoration: none !important;
+  text-transform: uppercase;
 }
 
 .portfolio_entry {

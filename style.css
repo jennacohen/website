@@ -153,6 +153,10 @@ a {
   transition: All 0.3s ease;
 }
 
+.entry_padding {
+  padding-bottom: 50px;
+}
+
 .portfolio_entry_title {
   color: #f2c744;
   font-family: "Overpass Mono", monospace;

@@ -1,25 +1,3 @@
-/* 
-OLD COLOR PALETTE
-pink/purple: #F1C4F2
-light blue: #79BAF2
-gold: #D9A74A
-off white: #F2E8DC
-redish orange: #F25835
-dark blue: #2A4382
-
-POSSIBLE LM/DM COLOR PALETTE
-off black: #1A1B1B
-pink: #F20C36
-yellow: #F2B705
-blue: #049DD9
-off white: #FFF5ED
-
-LUXE COLOR PALETTE
-BLACK:#161B00   
-IVORY:#FFFFF0
-GOLD: #F2C744
-*/
-
 /* page background */
 body {
   background-color: #120902;
@@ -154,7 +132,7 @@ a {
 }
 
 .entry_padding {
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 
 .portfolio_entry_title {

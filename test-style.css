@@ -1,0 +1,234 @@
+/* 1. Basic reset to prevent any margin/padding issues from affecting layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding is included in element width */
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden; /* Ensure no horizontal scrolling */
+}
+
+/* 2. Grid container with padding included in the width */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px;
+  width: 90vw; /* Full width of the viewport */
+  padding: 10px;
+  max-width: 100%; /* Prevent going beyond viewport */
+  overflow: hidden; /* Ensure no content overflows */
+}
+
+/* 3. Make sure images scale correctly inside their boxes */
+.box img {
+  width: 100%; /* Responsive image: fits the box */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Avoid any inline gaps */
+  max-width: 100%; /* Ensure it doesn't grow beyond box */
+  border: 5px solid;
+  border-color: #fdab44;
+  margin: 0 auto;
+}
+
+.box img:hover {
+  box-shadow: 0.1em 0.1em 1em 0.03em #fdab44;
+  transform: scale(1.02);
+  transition: All 0.3s ease;
+  cursor: pointer;
+}
+
+/* 4. Media query for mobile: switch to single column */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
+/* page background */
+body {
+  background-color: #ffffff;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.header_name {
+  max-width: 650px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #9f2f7b, #ef1653, #fc615c, #fdab44);
+  background-clip: text;
+  color: transparent;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+  letter-spacing: 4px;
+}
+
+.title {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #ef1653;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 40px;
+  /* letter-spacing: 4px; */
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    max-width: 500px;
+    font-size: 28px;
+  }
+}
+
+.bio {
+  max-width: 750px;
+  margin: auto;
+  color: #ef1653;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  /* letter-spacing: 2px; */
+}
+
+@media only screen and (max-width: 767px) {
+  .bio {
+    max-width: 400px;
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+    padding: 5px;
+  }
+}
+
+.resume {
+  max-width: 750px;
+  margin: auto;
+  color: #fdab44;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: #fdab44;
+  transition: All 0.3s ease;
+}
+
+/* nav icons */
+.icons {
+  margin: 0 auto !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+i {
+  padding-left: 8px;
+  padding-right: 8px;
+  /* transition: all 0.5s ; */
+  color: #fdab44;
+}
+
+i:hover {
+  transform: scale(1.1);
+  color: #fdab44;
+  transition: All 0.3s ease;
+}
+
+/* link styles */
+a {
+  color: inherit !important;
+  transition: 0.5s all;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/* portfolio styles */
+/* .portfolio {
+  color: #f2c744;
+  font-family: "Overpass Mono", monospace;
+  font-weight: 400;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 8px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.portfolio_image {
+  max-width: 500px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border: 5px solid;
+  border-color: #fffff0;
+}
+
+.work_entry img:hover {
+  box-shadow: 0.1em 0.1em 1em 0.03em #fffff0;
+  transform: scale(1.05);
+  transition: All 0.3s ease;
+}
+
+.entry_padding {
+  padding-bottom: 75px;
+} */
+
+.portfolio_entry_title {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #ef1653;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.entry-desc {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #ef1653;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 18px;
+  /* letter-spacing: 1px;  */
+}
+
+.portfolio_entry_date {
+  color: #f2c744;
+  font-family: "Overpass Mono", monospace;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio_entry {
+    max-width: 400px;
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+    padding: 5px;
+  }
+}
+
+.footer {
+  padding: 25px;
+  background-color: #fffff0;
+  color: #120902;
+  text-align: center;
+  max-width: 1920px;
+}

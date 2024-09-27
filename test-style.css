@@ -23,21 +23,28 @@ html {
 }
 
 /* 3. Make sure images scale correctly inside their boxes */
+
+.box {
+  background-color: #fddce5;
+  border-radius: 3px;
+}
+
 .box img {
-  width: 100%; /* Responsive image: fits the box */
+  width: 90%; /* Responsive image: fits the box */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Avoid any inline gaps */
   max-width: 100%; /* Ensure it doesn't grow beyond box */
-  border: 5px solid;
-  border-color: #ef1653;
+  /* border: 5px solid; */
+  border-radius: 3px;
   margin: 0 auto;
+  padding-top: 5%;
 }
 
 .box img:hover {
-  box-shadow: 0.1em 0.1em 1em 0.03em #fdab44;
+  /* box-shadow: 0.1em 0.1em 1em 0.03em #ef1653;
   transform: scale(1.02);
-  transition: All 0.3s ease;
-  cursor: pointer;
+  transition: All 0.3s ease; */
+  cursor: pointer !important;
 }
 
 /* 4. Media query for mobile: switch to single column */
@@ -117,12 +124,6 @@ body {
   font-size: 24px;
 }
 
-a:hover {
-  transform: scale(1.1);
-  color: #fdab44;
-  transition: All 0.3s ease;
-}
-
 /* nav icons */
 .icons {
   margin: 0 auto !important;
@@ -149,6 +150,12 @@ a {
   transition: 0.5s all;
   transform: scale(1.5);
   cursor: pointer;
+}
+
+a:hover {
+  transform: scale(1.1) !important;
+  color: #fdab44 !important;
+  transition: All 0.3s ease !important;
 }
 
 /* portfolio styles */
@@ -203,17 +210,18 @@ a {
   font-weight: 400;
   text-align: left;
   font-size: 18px;
+  width: 90%;
   /* letter-spacing: 1px;  */
 }
 
-.portfolio_entry_date {
+/* .portfolio_entry_date {
   color: #f2c744;
   font-family: "Overpass Mono", monospace;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .portfolio_entry {

@@ -29,7 +29,7 @@ html {
   display: block; /* Avoid any inline gaps */
   max-width: 100%; /* Ensure it doesn't grow beyond box */
   border: 5px solid;
-  border-color: #fdab44;
+  border-color: #ef1653;
   margin: 0 auto;
 }
 

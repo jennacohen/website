@@ -7,74 +7,51 @@
 
 body,
 html {
+  background-color: #ffffff;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
   height: 100%;
   overflow-x: hidden; /* Ensure no horizontal scrolling */
 }
+/* header */
 
-/* 2. Grid container with padding included in the width */
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 10px;
-  width: 90vw; /* Full width of the viewport */
-  padding: 10px;
-  max-width: 100%; /* Prevent going beyond viewport */
-  overflow: hidden; /* Ensure no content overflows */
+/* Gradient Background */
+.top-gradient {
+  width: 100%; /* Full width */
+  height: auto; /* Dynamic height based on content */
+  min-height: 125px; /* Minimum height for larger screens */
+  background: linear-gradient(to right, #9f2f7b, #ef1653, #fc615c, #fdab44);
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
 }
 
-/* 3. Make sure images scale correctly inside their boxes */
-
-.box {
-  background-color: #fddce5;
-  border-radius: 3px;
-}
-
-.box img {
-  width: 90%; /* Responsive image: fits the box */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Avoid any inline gaps */
-  max-width: 100%; /* Ensure it doesn't grow beyond box */
-  /* border: 5px solid; */
-  border-radius: 3px;
+/* Header Text */
+.header_name {
+  max-width: 90%; /* Flexible width, adapts to smaller screens */
   margin: 0 auto;
-  padding-top: 5%;
+  color: white;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-size: 5vw; /* Responsive font size */
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 20px;
 }
 
-.box img:hover {
-  /* box-shadow: 0.1em 0.1em 1em 0.03em #ef1653;
-  transform: scale(1.02);
-  transition: All 0.3s ease; */
-  cursor: pointer !important;
-}
-
-/* 4. Media query for mobile: switch to single column */
+/* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  .header_name {
+    font-size: 8vw; /* Scale font size for tablet */
+    letter-spacing: 2px; /* Adjust letter spacing */
   }
 }
 
-/* page background */
-body {
-  background-color: #ffffff;
-  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+@media (max-width: 480px) {
+  .header_name {
+    font-size: 10vw; /* Scale font size for mobile */
+    letter-spacing: 1px; /* Adjust letter spacing for mobile */
+  }
 }
-
-/* header */
-.header_name {
-  max-width: 650px;
-  margin: 0 auto;
-  background: linear-gradient(to right, #9f2f7b, #ef1653, #fc615c, #fdab44);
-  background-clip: text;
-  color: transparent;
-  font-family: "Gabarito", Arial, Helvetica, sans-serif;
-  font-size: 72px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 30px;
-  letter-spacing: 4px;
-}
-
 .title {
   max-width: 650px;
   margin: 0 auto;
@@ -83,6 +60,7 @@ body {
   font-weight: 400;
   text-align: center;
   font-size: 40px;
+  padding-top: 10px;
   /* letter-spacing: 4px; */
 }
 
@@ -117,7 +95,7 @@ body {
 .resume {
   max-width: 750px;
   margin: auto;
-  color: #fdab44;
+  color: #ef1653;
   font-family: "Gabarito", Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-align: center;
@@ -144,51 +122,133 @@ i:hover {
   transition: All 0.3s ease;
 }
 
-/* link styles */
+/* Media query for desktop and larger screens */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 3 columns for wider screens */
+  }
+}
+
+/* 2. Grid container with padding included in the width */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px;
+  width: 90vw; /* Full width of the viewport */
+  padding: 10px;
+  max-width: 100%; /* Prevent going beyond viewport */
+  overflow: hidden; /* Ensure no content overflows */
+}
+
+/* 3. Make sure images scale correctly inside their boxes */
+
+.box {
+  background-color: #fddce5;
+  border-radius: 3px;
+}
+
+.box img {
+  width: 90%; /* Responsive image: fits the box */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Avoid any inline gaps */
+  max-width: 100%; /* Ensure it doesn't grow beyond box */
+  /* border: 5px solid; */
+  border-radius: 3px;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.box img:hover {
+  /* box-shadow: 0.1em 0.1em 1em 0.03em #ef1653; */
+  transform: scale(1.02);
+  transition: All 0.3s ease;
+  cursor: pointer !important;
+}
+
+/* 4. Media query for mobile: switch to single column */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
 a {
-  color: inherit !important;
-  transition: 0.5s all;
-  transform: scale(1.5);
+  color: #ef1653 !important;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  transition: 0.5s all ease; /* Apply transition to the default state */
 }
 
+/* Visited link */
+a:visited {
+  color: #6912e1; /* Changes the color of visited links */
+}
+
+/* Hovered link */
 a:hover {
-  transform: scale(1.1) !important;
-  color: #fdab44 !important;
-  transition: All 0.3s ease !important;
+  color: #2ecc71; /* Changes color when hovered */
+  /* transform: scale(1.1); Scale on hover */
 }
 
-/* portfolio styles */
-/* .portfolio {
-  color: #f2c744;
-  font-family: "Overpass Mono", monospace;
-  font-weight: 400;
+/* Active link (when clicked) */
+a:active {
+  color: #a2c070; /* Changes color when link is clicked */
+}
+
+.highlight-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default to 1 column */
+  gap: 0px; /* Space between boxes */
+  padding: 10px;
+  width: 90vw; /* Full width of the viewport */
+  max-width: 100%; /* Prevent going beyond viewport */
+  overflow: hidden; /* Ensure no content overflows */
+  margin: 0 auto;
+}
+
+/* 4. Media query for mobile: switch to single column */
+@media (max-width: 768px) {
+  .highlight-container {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
+.highlight-box {
+  background-color: #9f2f7b;
+  padding: 20px;
+  border: 1px solid #ffffff;
   text-align: center;
-  font-size: 50px;
-  letter-spacing: 8px;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.highlight-box a {
+  color: #ffffff !important;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  transition: 0.5s all ease; /* Apply transition to the default state */
+}
+
+.highlight-box a:hover {
+  color: #ffffff !important;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.highlight-title {
   max-width: 650px;
   margin: 0 auto;
-}
-
-.portfolio_image {
-  max-width: 500px;
-  width: 70%;
-  margin: 0 auto;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   text-align: center;
-  display: block;
-  border: 5px solid;
-  border-color: #fffff0;
+  font-size: 25px;
 }
-
-.work_entry img:hover {
-  box-shadow: 0.1em 0.1em 1em 0.03em #fffff0;
-  transform: scale(1.05);
-  transition: All 0.3s ease;
-}
-
-.entry_padding {
-  padding-bottom: 75px;
-} */
 
 .portfolio_entry_title {
   max-width: 650px;
@@ -199,7 +259,7 @@ a:hover {
   font-weight: 500;
   text-align: center;
   font-size: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .entry-desc {
@@ -214,15 +274,6 @@ a:hover {
   /* letter-spacing: 1px;  */
 }
 
-/* .portfolio_entry_date {
-  color: #f2c744;
-  font-family: "Overpass Mono", monospace;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 2px;
-} */
-
 @media only screen and (max-width: 767px) {
   .portfolio_entry {
     max-width: 400px;
@@ -235,8 +286,9 @@ a:hover {
 
 .footer {
   padding: 25px;
-  background-color: #fffff0;
-  color: #120902;
+  background-color: #9f2f7b;
+  color: #ffffff;
   text-align: center;
   max-width: 1920px;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
 }

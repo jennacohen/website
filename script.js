@@ -28,27 +28,27 @@ new TypeIt("#myElement", {
 //     // strings: "journalist + designer",
 // }).go();
 
-$(document).ready(function () {
-  var elem = $("body");
-  var color = elem.css("background-color");
-  var counter = 0;
-  $("#btn").click(function () {
-    counter = counter + 1;
-    if (counter % 2 == 0) {
-      $("body").css({ backgroundColor: "#120902" });
-      $(".toggle-color").css({ color: "#FFFFF0" });
-      $(".image-border-color").css({ "border-color": "#FFFFF0" });
-      $(".footer-color").css({ "background-color": "#FFFFF0" });
-      $(".footer-text-color").css({ color: "#120902" });
-    } else {
-      $("body").css({ backgroundColor: "#FFFFF0" });
-      $(".toggle-color").css({ color: "#120902" });
-      $(".image-border-color").css({ "border-color": "#120902" });
-      $(".footer-color").css({ "background-color": "#120902" });
-      $(".footer-text-color").css({ color: "#FFFFF0" });
-    }
-    // console.log(color)
+// $(document).ready(function () {
+//   var elem = $("body");
+//   var color = elem.css("background-color");
+//   var counter = 0;
+//   $("#btn").click(function () {
+//     counter = counter + 1;
+//     if (counter % 2 == 0) {
+//       $("body").css({ backgroundColor: "#120902" });
+//       $(".toggle-color").css({ color: "#FFFFF0" });
+//       $(".image-border-color").css({ "border-color": "#FFFFF0" });
+//       $(".footer-color").css({ "background-color": "#FFFFF0" });
+//       $(".footer-text-color").css({ color: "#120902" });
+//     } else {
+//       $("body").css({ backgroundColor: "#FFFFF0" });
+//       $(".toggle-color").css({ color: "#120902" });
+//       $(".image-border-color").css({ "border-color": "#120902" });
+//       $(".footer-color").css({ "background-color": "#120902" });
+//       $(".footer-text-color").css({ color: "#FFFFF0" });
+//     }
+//     // console.log(color)
 
-    // $("body").css({ "maxWidth": "white" });
-  });
-});
+//     // $("body").css({ "maxWidth": "white" });
+//   });
+// });
